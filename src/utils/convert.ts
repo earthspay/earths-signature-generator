@@ -1,6 +1,6 @@
 import { TBuffer } from '../interface';
 import converters from '../../libs/converters';
-import { BigNumber } from '@waves/data-entities';
+import { BigNumber } from '@earths/data-entities';
 
 
 function performBitwiseAnd(a: BigNumber, b: BigNumber): number {

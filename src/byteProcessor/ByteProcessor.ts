@@ -1,17 +1,17 @@
-import { BigNumber } from '@waves/data-entities';
+import { BigNumber } from '@earths/data-entities';
 import { toByteArray } from 'base64-js';
 import base58 from '../libs/base58';
 import convert from '../utils/convert';
 import { concatUint8Arrays } from '../utils/concat';
 import { DATA_ENTRIES_BYTE_LIMIT, SET_SCRIPT_LANG_VERSION, STUB_NAME } from '../constants';
 import { config, TLong } from '..';
-import { ALIAS_VERSION, TRANSFER_ATTACHMENT_BYTE_LIMIT, WAVES_BLOCKCHAIN_ID, WAVES_ID } from '../constants';
+import { ALIAS_VERSION, TRANSFER_ATTACHMENT_BYTE_LIMIT, EARTHS_BLOCKCHAIN_ID, EARTHS_ID } from '../constants';
 
 
-// NOTE : Waves asset ID in blockchain transactions equals to an empty string
+// NOTE : Earths asset ID in blockchain transactions equals to an empty string
 function blockchainifyAssetId(assetId: string): string {
     if (!assetId) throw new Error('Asset ID should not be empty');
-    return assetId === WAVES_ID ? WAVES_BLOCKCHAIN_ID : assetId;
+    return assetId === EARTHS_ID ? EARTHS_BLOCKCHAIN_ID : assetId;
 }
 
 function getAliasBytes(alias: string): number[] {
@@ -151,7 +151,7 @@ export class Alias extends ByteProcessor {
 export class AssetId extends ByteProcessor {
     public process(value: string) {
         value = blockchainifyAssetId(value);
-        // We must pass bytes of `[0]` for Waves asset ID and bytes of `[1] + assetId` for other asset IDs
+        // We must pass bytes of `[0]` for Earths asset ID and bytes of `[1] + assetId` for other asset IDs
         const bytes = value ? concatUint8Arrays(Uint8Array.from([1]), base58.decode(value)) : Uint8Array.from([0]);
         return Promise.resolve(bytes);
     }

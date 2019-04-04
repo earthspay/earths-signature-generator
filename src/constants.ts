@@ -56,8 +56,8 @@ export const enum DATA_TRANSACTION_FIELD_TYPES {
     STRING
 }
 
-export const WAVES_ID = 'WAVES';
-export const WAVES_BLOCKCHAIN_ID = '';
+export const EARTHS_ID = 'EARTHS';
+export const EARTHS_BLOCKCHAIN_ID = '';
 
 export const MAINNET_BYTE: number = 'W'.charCodeAt(0);
 export const TESTNET_BYTE: number = 'T'.charCodeAt(0);

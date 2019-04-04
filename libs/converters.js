@@ -1,5 +1,5 @@
 var CryptoJS = require('crypto-js');
-var BigNumber = require('@waves/data-entities').BigNumber;
+var BigNumber = require('@earths/data-entities').BigNumber;
 
 
 /** START OF THE LICENSED CODE */

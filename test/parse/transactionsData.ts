@@ -1,5 +1,5 @@
 import { MAINNET_BYTE, TRANSACTION_TYPE_NUMBER, TRANSACTION_TYPE_VERSION } from '../../src';
-import { BigNumber } from '@waves/data-entities';
+import { BigNumber } from '@earths/data-entities';
 
 
 export default {
@@ -21,8 +21,8 @@ export default {
         type: TRANSACTION_TYPE_NUMBER.TRANSFER,
         version: TRANSACTION_TYPE_VERSION.TRANSFER,
         senderPublicKey: '2M25DqL2W4rGFLCFadgATboS8EPqyWAN3DjH12AH5Kdr',
-        assetId: 'WAVES',
-        feeAssetId: 'WAVES',
+        assetId: 'EARTHS',
+        feeAssetId: 'EARTHS',
         timestamp: new BigNumber(1538663245955),
         amount: new BigNumber('1000000'),
         fee: new BigNumber('100000'),
@@ -53,7 +53,7 @@ export default {
     [TRANSACTION_TYPE_NUMBER.LEASE]: {
         type: TRANSACTION_TYPE_NUMBER.LEASE,
         version: TRANSACTION_TYPE_VERSION.LEASE,
-        leaseAssetId: 'WAVES',
+        leaseAssetId: 'EARTHS',
         senderPublicKey: '2M25DqL2W4rGFLCFadgATboS8EPqyWAN3DjH12AH5Kdr',
         recipient: '3PCAB4sHXgvtu5NPoen6EXR5yaNbvsEA8Fj',
         amount: new BigNumber('1000000'),

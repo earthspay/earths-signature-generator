@@ -97,9 +97,9 @@ const byteToBase58 = (bytes, start, length?) => { // TODO!
 // @ts-ignore
 const byteToAssetId = (bytes, start) => {
     const shift = 33;
-    const isWaves = !bytes[start];
-    if (isWaves) {
-        return { shift: 1, value: 'WAVES' };
+    const isEarths = !bytes[start];
+    if (isEarths) {
+        return { shift: 1, value: 'EARTHS' };
     }
     const { value } = byteToBase58(bytes, start + 1);
     return { shift, value };

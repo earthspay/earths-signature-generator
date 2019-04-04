@@ -19,7 +19,7 @@ import {
     MAINNET_BYTE,
     TRANSACTION_TYPE_NUMBER
 } from '../../src';
-import { BigNumber } from '@waves/data-entities';
+import { BigNumber } from '@earths/data-entities';
 
 export type T_TRANSACTION_PROPS = IISSUE_PROPS |
     ITRANSFER_PROPS |
@@ -91,7 +91,7 @@ export const TEST_TRANSACTIONS_DATA: Array<{ data: T_TRANSACTION_PROPS; type: TR
             version: 1,
             recipient: '3PAs2qSeUAfgqSKS8LpZPKGYEjJKcud9Djr',
             assetId: '8LQW8f7P5d5PZM7GtZEBgaqRPGSzS3DfPuiXrURJ4AJS',
-            feeAssetId: 'WAVES',
+            feeAssetId: 'EARTHS',
             amount: new BigNumber(200000),
             attachment: 'Kq9Fxqv1fSnyf2kZkdn',
         },
@@ -112,7 +112,7 @@ export const TEST_TRANSACTIONS_DATA: Array<{ data: T_TRANSACTION_PROPS; type: TR
             version: 2,
             recipient: '3PAs2qSeUAfgqSKS8LpZPKGYEjJKcud9Djr',
             assetId: '8LQW8f7P5d5PZM7GtZEBgaqRPGSzS3DfPuiXrURJ4AJS',
-            feeAssetId: 'WAVES',
+            feeAssetId: 'EARTHS',
             amount: new BigNumber(200000),
             attachment: 'Kq9Fxqv1fSnyf2kZkdn',
         },
@@ -173,7 +173,7 @@ export const TEST_TRANSACTIONS_DATA: Array<{ data: T_TRANSACTION_PROPS; type: TR
                 senderPublicKey: '2M25DqL2W4rGFLCFadgATboS8EPqyWAN3DjH12AH5Kdr',
                 matcherPublicKey: '7kPFrHDiGw1rCm7LPszuECwWYL3dMf6iMifLRDJQZMzy',
                 amountAsset: '6XJAscmejGPTLAdKsg12MynB5rNQzNiZz8Yj81SWeFrj',
-                priceAsset: 'WAVES',
+                priceAsset: 'EARTHS',
                 orderType: 'buy',
                 amount: new BigNumber(100),
                 price: new BigNumber(900000000000),
@@ -187,7 +187,7 @@ export const TEST_TRANSACTIONS_DATA: Array<{ data: T_TRANSACTION_PROPS; type: TR
                 senderPublicKey: '3pu3Nn1NLtvyUntiwGRova6RGGvGLg6gKJ9C8KSviKvn',
                 matcherPublicKey: '7kPFrHDiGw1rCm7LPszuECwWYL3dMf6iMifLRDJQZMzy',
                 amountAsset: '6XJAscmejGPTLAdKsg12MynB5rNQzNiZz8Yj81SWeFrj',
-                priceAsset: 'WAVES',
+                priceAsset: 'EARTHS',
                 orderType: 'sell',
                 amount: new BigNumber(10000),
                 price: new BigNumber(900000000000),
@@ -233,7 +233,7 @@ export const TEST_TRANSACTIONS_DATA: Array<{ data: T_TRANSACTION_PROPS; type: TR
                 version: 1,
                 senderPublicKey: 'CMc7mA6LADJANdKRTVpu3S1cthvKm23Lp6yGcog8SwXy',
                 matcherPublicKey: '7kPFrHDiGw1rCm7LPszuECwWYL3dMf6iMifLRDJQZMzy',
-                amountAsset: 'WAVES',
+                amountAsset: 'EARTHS',
                 priceAsset: '8LQW8f7P5d5PZM7GtZEBgaqRPGSzS3DfPuiXrURJ4AJS',
                 orderType: 'buy',
                 amount: new BigNumber(16118000000),
@@ -247,7 +247,7 @@ export const TEST_TRANSACTIONS_DATA: Array<{ data: T_TRANSACTION_PROPS; type: TR
                 version: 2,
                 senderPublicKey: 'B1hHsfxJhVZsXqUArCELhYdVpqaxtuVSuyEZMbiACkzS',
                 matcherPublicKey: '7kPFrHDiGw1rCm7LPszuECwWYL3dMf6iMifLRDJQZMzy',
-                amountAsset: 'WAVES',
+                amountAsset: 'EARTHS',
                 priceAsset: '8LQW8f7P5d5PZM7GtZEBgaqRPGSzS3DfPuiXrURJ4AJS',
                 orderType: 'sell',
                 amount: new BigNumber(1000000),
@@ -414,7 +414,7 @@ export const TEST_TRANSACTIONS_DATA: Array<{ data: T_TRANSACTION_PROPS; type: TR
             timestamp: 1548666204769,
             version: 1,
             attachment: '',
-            assetId: 'WAVES',
+            assetId: 'EARTHS',
             transfers: [
                 {
                     recipient: 'merry',
